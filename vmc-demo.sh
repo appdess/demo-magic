@@ -26,9 +26,6 @@ DEMO_PROMPT="${GREEN}➜ ${CYAN}\W "
 clear
 
 
-# Logon to the K8s master node
-p "ssh ubuntu@172.30.117.22"
-
 # check if the cluster is healthy (Showing a "Ready" status)
 pe "kubectl get nodes"
 pe "cd demo/"
