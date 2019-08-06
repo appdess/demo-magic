@@ -30,22 +30,22 @@ clear
 pe "kubectl get nodes"
 pe "cd /home/ubuntu/demo"
 pe "ls"
-p "cat vmc-nginx.yaml"
-p "kubectl apply -f vmc-nginx.yaml"
+pe "cat vmc-nginx.yaml"
+pe "kubectl apply -f vmc-nginx.yaml"
 # check the state of the deployment:
-p "kubectl get deploy"
+pe "kubectl get deploy"
 # show the pods which have been created by our deployment - we filter them by their label "vmc-nginx". You will notice that each pod got it´s own IP by our overlay-network (Calico). This is K8s internal networking and not accessible from the outside.
 pe kubectl get pods -l run=vmc-nginx -o wide
 
 # show the service-definition
-p "cat service.yaml"
-p "kubectl apply -f service.yaml"
-p "kubectl get svc"
-p "cat \"something you dont want to really run\""
+pe "cat service.yaml"
+pe "kubectl apply -f service.yaml"
+pe "kubectl get svc"
+pe "cat \"something you dont want to really run\""
 # show the Kubernetes Worker Node-IPs:
-p "kubectl get nodes -o wide"
+pe "kubectl get nodes -o wide"
 #show that it works:
-p "curl http://172.30.117.23:30102"
+pe "curl http://172.30.117.23:30102"
 # show a prompt so as not to reveal our true nature after
 # the demo has concluded
 p ""
