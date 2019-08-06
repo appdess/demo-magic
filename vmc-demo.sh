@@ -28,7 +28,8 @@ clear
 
 # check if the cluster is healthy (Showing a "Ready" status)
 pe "kubectl get nodes"
-pe "cd /home/ubuntu/demo"pe "ls"
+pe "cd /home/ubuntu/demo"
+pe "ls"
 pe "cat vmc-nginx.yaml"
 pe "kubectl apply -f vmc-nginx.yaml"
 # check the state of the deployment:
