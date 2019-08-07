@@ -41,7 +41,7 @@ pe "kubectl get pods -l run=vmc-nginx -o wide"
 pe "cat service.yaml"
 pe "kubectl apply -f service.yaml"
 pe "kubectl get svc"
-pe "cat \"something you dont want to really run\""
+
 # show the Kubernetes Worker Node-IPs:
 pe "kubectl get nodes -o wide"
 #show that it works:
