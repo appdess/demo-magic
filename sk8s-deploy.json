@@ -1,0 +1,135 @@
+{
+  "DiskProvisioning": "flat",
+  "IPAllocationPolicy": "dhcpPolicy",
+  "IPProtocol": "IPv4",
+  "PropertyMapping": [
+    {
+      "Key": "K8S_VERSION",
+      "Value": "release/stable"
+    },
+    {
+      "Key": "NUM_NODES",
+      "Value": "2"
+    },
+    {
+      "Key": "NUM_CONTROLLERS",
+      "Value": "1"
+    },
+    {
+      "Key": "NUM_BOTH",
+      "Value": "3"
+    },
+    {
+      "Key": "CLONE_NUM_CPUS_CONTROLLERS",
+      "Value": "2"
+    },
+    {
+      "Key": "CLONE_MEM_GB_CONTROLLERS",
+      "Value": "8"
+    },
+    {
+      "Key": "CLONE_NUM_CPUS_WORKERS",
+      "Value": "4"
+    },
+    {
+      "Key": "CLONE_MEM_GB_WORKERS",
+      "Value": "16"
+    },
+    {
+      "Key": "VSPHERE_SERVER",
+      "Value": "vcenter.sddc-18-195-38-9.vmwarevmc.com"
+    },
+    {
+      "Key": "VSPHERE_SERVER_PORT",
+      "Value": "443"
+    },
+    {
+      "Key": "VSPHERE_USER",
+      "Value": "cloudadmin@vmc.local"
+    },
+    {
+      "Key": "VSPHERE_PASSWORD",
+      "Value": "M*7Myx6QBAsnF-"
+    },
+    {
+      "Key": "VSPHERE_SERVER_INSECURE",
+      "Value": "True"
+    },
+    {
+      "Key": "NETWORK_DNS_1",
+      "Value": "8.8.8.8"
+    },
+    {
+      "Key": "NETWORK_DNS_2",
+      "Value": "8.8.4.4"
+    },
+    {
+      "Key": "CLOUD_PROVIDER_TYPE",
+      "Value": "External"
+    },
+    {
+      "Key": "CLOUD_PROVIDER_IMAGE",
+      "Value": "gcr.io/cloud-provider-vsphere/vsphere-cloud-controller-manager:latest"
+    },
+    {
+      "Key": "CREATE_LOAD_BALANCER",
+      "Value": "False"
+    },
+    {
+      "Key": "AWS_ACCESS_KEY_ID",
+      "Value": ""
+    },
+    {
+      "Key": "AWS_SECRET_ACCESS_KEY",
+      "Value": ""
+    },
+    {
+      "Key": "AWS_DEFAULT_REGION",
+      "Value": "us-west-2"
+    },
+    {
+      "Key": "INSTALL_CONFORMANCE_TESTS",
+      "Value": "False"
+    },
+    {
+      "Key": "LOG_LEVEL_KUBERNETES",
+      "Value": "2"
+    },
+    {
+      "Key": "LOG_LEVEL_KUBE_APISERVER",
+      "Value": "2"
+    },
+    {
+      "Key": "LOG_LEVEL_KUBE_CONTROLLER_MANAGER",
+      "Value": "2"
+    },
+    {
+      "Key": "LOG_LEVEL_KUBE_SCHEDULER",
+      "Value": "2"
+    },
+    {
+      "Key": "LOG_LEVEL_KUBELET",
+      "Value": "2"
+    },
+    {
+      "Key": "LOG_LEVEL_KUBE_PROXY",
+      "Value": "2"
+    },
+    {
+      "Key": "LOG_LEVEL_CLOUD_CONTROLLER_MANAGER",
+      "Value": "2"
+    }
+  ],
+  "NetworkMapping": [
+    {
+      "Name": "EMEA-VMC-TEST-04-DHCP",
+      "Network": ""
+    }
+  ],
+  "Annotation": "A turn-key solution for deploying single or multi-node Kubernetes clusters.",
+  "MarkAsTemplate": false,
+  "PowerOn": true,
+  "InjectOvfEnv": false,
+  "WaitForIP": false,
+  "Name": null
+}
